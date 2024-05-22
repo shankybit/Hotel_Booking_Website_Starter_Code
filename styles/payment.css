@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E0E0E0;
+}
+
+.icg{
+    display: flex;
+    flex-direction: column;
+}
+
+.picturebookin{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(132,136,139);
+    width: 50vw;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+}
+
+.header{
+    background-color: rosybrown;
+}
+
+.footer{
+    background-color: rosybrown;
+}
+
+.amountbookin{
+    border: 2px solid black;
+    padding: 1% 2% 1% 2%;
+    margin : 2%;
+    border-radius: 5px;
+}

@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E0E0E0;
+}
+
+.ccn{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-color: rosybrown;
+}
+
+.footer{
+    background-color: rosybrown;
+}
+
+.bookdetail{
+    margin: 4%;
+}
