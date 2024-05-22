@@ -1,0 +1,9 @@
+.icng{
+    display: flex;
+    flex-direction: column;
+    
+}
+.imag{
+    width: 300px;
+    height: 300px;
+}

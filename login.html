@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="index.html">
+            <div><label for="nm">Username:</label><input required type="text" placeholder="Enter Name" id="nm"></div>
+            <div><label for="pss">Password:</label><input required type="password" placeholder="Enter Password" id="pss"></div>
+            <button type="submit" value="submit" onclick="submitForm()">Login</button>
+        </form>
+    </div>
+    <script>
+        function submitForm(event){
+            event.preventDefault();
+            // window.location.href="index.html";
+        }
+    </script>
+</body>
+</html>
