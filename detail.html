@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://example.com/fontawesome/v6.4.2/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="./styles/detail.css" >
+    <script src="detail.js" defer ></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <a href="index.html"><img src="./assests/images/logo.png" alt="logo" width="60px" height="60px"></a>
+        <a href="login.html" style="text-decoration: none; color: black; margin-right: 50px;">Login</a>
+    </div>
+    <div class="bookdetail">
+        <div class="bkdee">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="300px" >
+            
+            <form action="payment.html" style="display: flex; flex-direction: column; width: 300px;">
+                <div style="display: flex; justify-content: space-between;">
+                    <label for="numberofoccup" style="margin: 0px 4px;">Adults:</label><input required type="number" id="numberofoccup" min="1" max="10" style="margin: 0px 4px; margin-left: 31px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label for="nameofbooking" style="margin: 0px 4px;">Name:</label><input required type="text" style="margin: 0px 4px; margin-left: 33px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label for="dt" style="margin: 0px 4px;">From Date:</label><input required type="date" style="margin: 0px 4px;">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label for="dttime" style="margin: 0px 4px;">To Date</label><input required type="date"style="margin: 0px 4px; margin-left: 26px">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <label for="ttl" style="margin: 0px 4px;">Total:</label><input disabled type="text" style="margin: 0px 4px; margin-left: 38px;">
+                </div>
+                <button type="submit" value="submit" onclick="onFormsb()" style="width: 100px; margin-left: 20px;">Book Now</button>
+            </form>
+        </div>
+        <br>
+    <div class="boxxx">
+        <h2>Radisson Blu Hotel</h2>
+        <h6 style="font-family: cursive;">RATING</h6>
+        <p>5 Star</p>
+        <h6 style="font-family: cursive;">AMENITIES</h6>
+    <ul>
+        <li>Room Service</li>
+        <li>Restaurant</li>
+        <li>Business center</li>
+        <li>Fitness center</li>
+        <li>Pool</li>
+    </ul>
+    <h6 style="font-family: cursive;">DESCRIPTION</h6>
+    <p style="margin-bottom: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit ex est reprehenderit, explicabo deserunt ratione nisi sint a itaque eligendi fugiat?<br> Maxime eum, pariatur reprehenderit vitae totam eveniet repellat?</p>
+    </div>
+    <div class="footer">
+        <a href="contact.html" style="text-decoration: none; font-family: sans-serif; color: black;">Contact Us</a> 
+        <p style="font-family: sans-serif; font-size: 12px;"><i class="fa fa-copyright" aria-hidden="true"></i>2020 ROOM SERACH PVT LTD</p>
+        <div style="margin-right: 10px;">
+            <a href="https://www.facebook.com" target="_blank"><img src="./assests/images/facebook.png" width="22px" height="20px"/></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="./assests/images/instagram.png" width="22px" height="20px"/></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="./assests/images/twitter.png" width="22px" height="20px"/></a>
+        </div>
+       </div>
+    </div>
+</body>
+</html>
