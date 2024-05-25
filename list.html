@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://example.com/fontawesome/v6.4.2/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="./styles/list.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <a href="index.html"><img src="./assests/images/logo.png" alt="logo" width="60px" height="60px"></a>
+        <button class="btn btn-light mx-3" data-toggle="modal" data-target="#loginButton">
+            Login
+        </button>
+    </div>
+    <div class="modal fade" id="loginButton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="height: 250px; padding: 15px; padding-bottom: 20px;">
+                <form action="index.html" class="form form-control">
+                    <div><label for="nm">Username:</label><input class="form-control" required type="text" placeholder="Enter Name" id="nm"></div>
+                    <div><label for="pss">Password:</label><input class="form-control" required type="password" placeholder="Enter Password" id="pss"></div>
+                    <div class="px-3 py-3">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" value="submit" class="btn btn-primary" onclick="submitForm()">Login</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="emailBoxx" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="height: 200px; padding: 15px; padding-bottom: 20px;">
+                <form style="display: flex; flex-direction: column;" action="index.html">
+                    <p>Thank you for reaching out!!!</p>
+                    <p>Please enter your email and we will getback to you</p>
+                    <input required type="email" placeholder="Enter your email" id="inpi">
+                    <div class="py-3">
+                        <button type="submit" value="submit" class="btn btn-primary" style="width: 80px;" id="myForm" onclick="submitFormemail()">Submit</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div style="list-style: none; position: fixed; top: 8%; left: 45%;" class="my-5" id="butn">
+            <button class="btn btn-primary active" id="butn1"><a href="#listin" class="btteen">List View</a></button>
+            <button class="btn btteen" id="butn2"><a href="#mappin" class="btteen">Map View</a></button>
+        </div>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 4%;">
+        <a href="detail.html" style="height: 200px; width: 200px;">
+            <div class="imag" id="listin">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="lstin" style="margin-bottom: -4px;" height= "200px" width= "200px">
+                <div style="margin: 15px;">
+                    <a href="" style="text-decoration: none; color: black;"><h3>Radisson Blu Hotel</h3></a>
+                    
+                    <a href="" style="text-decoration: none; color: black;">5 Star</a>
+                    <br><br>
+                    <a href="" style="text-decoration: none; color: black;">New Delhi</a>
+                </div>
+            </div>
+        </a>
+        <div class="imag">
+           
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" height= "200px" width= "200px">
+            <div style="margin: 3%; text-decoration: none;">
+                <h3>The Lalit New Delhi</h3>
+                <p>4.5 Star</p>
+                <p>New Delhi</p>
+            </div>
+            
+        </div>
+        <div class="imag" style="margin-left: -335px;">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" height="200px" width= "200px">
+        
+            <div style="margin: 3%; text-decoration: none;">
+                <h3>Taj Palace</h3>
+        
+                <p>4.0 Star</p>
+                
+                <p>New Delhi</p>
+            </div>
+        </div>
+    </div>
+    <div id="mappin">
+        <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" >
+    </div>
+    <p style="margin-bottom: 30px;margin-left: 10px;">MAP VIEW</p>
+    <br><br>
+    <div class="footer">
+        <button class="btn btn-info" data-toggle="modal" data-target="#emailBoxx">
+            Contact Us
+        </button>
+        <p style="font-family: sans-serif; font-size: 12px;"><i class="fa fa-copyright" aria-hidden="true"></i>2020 ROOM SERACH PVT LTD</p>
+        <div style="margin-right: 10px;">
+            <a href="https://www.facebook.com" target="_blank"><img src="./assests/images/facebook.png" width="22px" height="20px"/></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="./assests/images/instagram.png" width="22px" height="20px"/></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="./assests/images/twitter.png" width="22px" height="20px"/></a>
+        </div>
+    </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        let butn1 = document.getElementById("butn1");
+        let butn2 = document.getElementById("butn2");
+
+        butn1.addEventListener('click', function(){
+            butn1.classList.add('btn-primary');
+            butn2.classList.remove('btn-primary');
+            butn1.classList.add('activee');
+            butn2.classList.remove('activee');
+            butn1.classList.remove('btteen');
+            butn2.classList.add('btteen');
+        });
+
+        butn2.addEventListener('click', function(){
+            butn1.classList.remove('btn-primary');
+            butn2.classList.add('btn-primary');
+            butn2.classList.add('activee');
+            butn1.classList.remove('activee');
+            butn2.classList.remove('btteen');
+            butn1.classList.add('btteen');
+        })
+    </script>
+</body>
+</html>
