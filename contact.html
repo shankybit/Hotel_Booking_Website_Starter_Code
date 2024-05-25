@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Thank you for reaching out!!!</p>
+    <p>Please enter your email and we will getback to you</p>
+    <div style="width: 300px;">
+        <form style="display: flex; flex-direction: column;" action="index.html">
+            <input required type="email" placeholder="Enter your email" id="inpi">
+            <button type="submit" value="submit" style="width: 80px;" id="myForm" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+    <script>
+        function submitForm(event){
+            event.preventDefault();
+            // window.location.href="index.html";
+        }
+    </script>
+</body>
+</html>

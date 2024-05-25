@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E0E0E0;
+}
+
+.ccn{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-color: rosybrown;
+}
+
+.footer {
+    
+    background-color: rosybrown;
+    z-index: 5;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 10px;
+   
+}
+
+.content{
+    background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+}
+
+.bookdetail{
+    
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
+
+.bookdetail .boxxx{
+    margin-left: 90px;
+    font-family: sans-serif;
+}
+
+.bookdetail .bkdee{
+    
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+}
+
+.bookdetail .bkdee .bdeek{
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+/* .bookdetail .bkdee .bdee{
+    width: 60vh;
+} */
+
+.bookdetail .bkdee img{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border: 2px solid black;
+    padding: 1% 15%;
+    
+    
+}
+
+.bookdetail .bkdee form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 70vw;
+    height: 59vh;
+    margin-left: -2px;
+    border: 2px solid black;
+
+}
+
+.bookdetail .bkdee form div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bookdetail .bkdee form div input{
+    margin: 0px 10px;
+}
+
+
+.bookdetail .bkdee form div input{
+    width: 200px;
+    margin: 0px 10px;
+   
+}
