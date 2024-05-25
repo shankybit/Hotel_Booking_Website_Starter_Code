@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" class="form form-control">
+        <div><label for="nm">Username:</label><input class="form-control" required type="text" placeholder="Enter Name" id="nm"></div>
+        <div><label for="pss">Password:</label><input class="form-control" required type="password" placeholder="Enter Password" id="pss"></div>
+        <button type="submit" value="submit" onclick="submitForm()">Login</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+    function submitForm(e){
+        e.preventDefault();
+    }
+</script>
+</body>
+</html>
