@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E0E0E0;
+    position: relative;
+}
+
+.header{
+    
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-color: rosybrown;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+}
+#inputting{
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+.header #inputing input:focus{ outline: none;}
+
+.links{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#inputing{
+   position: absolute;
+   z-index: 2;
+}
+.idd {
+    
+   /* position: absolute; */
+    /* height: 380px; */
+
+}
+.imagecarousel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    
+   
+}
+
+
+@media screen and (max-width: 359){
+    .imagecarousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        align-items: center;
+        
+        
+    }
+
+
+}
+
+
+.imagecarousel img{
+    border-radius: 25%;
+    
+}
+
+.footer {
+    
+    background-color: rosybrown;
+    z-index: 5;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+   
+}
+
+.imagecarousel .imgebox{
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    padding: 4%;
+    max-height: 150px;
+
+    
+}
+
+.imagecarousel .imgebox img{
+    box-shadow: 16px 16px 16px #888888;
+    
+}
+
+.imagecarousel .imgebox .boxx{
+    width: 150px; height: 150px;border-radius: 25%; background-color: black; opacity: 0.4;position: relative; top: -150px; z-index: 3; display: none;
+   
+}
+
+
+
+.imagecarousel .imgebox:hover .boxx{
+    display: block;
+}
+
+.imagecarousel .imgebox:hover .boxxy{
+    display: block;
+}
+
+.imagecarousel .imgebox p{
+    text-align: center; color: white; font-family: sans-serif; position: relative; top: -250px; z-index: 5;display: none;
+}
+
+.imagecarousel .imgebox:hover p{
+    display: block;
+}

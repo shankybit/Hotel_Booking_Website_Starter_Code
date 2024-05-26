@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E0E0E0;
+}
+
+.icg{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 850px){
+    .picturebookin img{
+        
+        min-width: 60vw;
+        /* max-height: 60vh; */
+    }
+
+    .picturebookin{
+        min-width: 60vw;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .picturebookin img{
+        
+        min-width: 60vw;
+        /* max-height: 60vh; */
+    }
+
+    .picturebookin{
+        min-width: 60vw;
+    }
+
+}
+
+
+.picturebookin{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  rgb(132,136,139);
+    height: fit-content;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-top: 110px;
+    align-items: center;
+    
+}
+
+.picturebookin img{
+    max-width: 20vw;
+    max-height: 30vh;
+}
+
+.header{
+    background-color: rosybrown;
+}
+
+.content{
+    background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+}
+
+.footer {
+    
+    background-color: rosybrown;
+    z-index: 5;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+   
+}
+
+.amountbookin{
+    border: 2px solid black;
+    padding: 1% 2% 1% 2%;
+    margin : 2%;
+    border-radius: 5px;
+}
